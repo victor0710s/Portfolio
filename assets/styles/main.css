@@ -41,18 +41,22 @@ body {
 }
 
 .bio {
-  margin-top: 65px;
-  margin-bottom: 80px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 .bio .bio-img {
-  width: 30%;
+  width: 28%;
   border-radius: 50%;
   margin-left: 130px;
   border: 0.5px solid rgba(70, 70, 70, 0.2549019608);
 }
 .bio .bio-text {
+  flex: 1;
   width: 65%;
   line-height: 1.5;
   margin-left: 30px;
@@ -65,6 +69,17 @@ body {
 .bio p {
   font-size: 17px;
   margin-top: 20px;
+}
+.bio .contacts a {
+  color: #000;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 5px;
+  transform: all 0.8s ease;
+}
+.bio i:hover {
+  font-size: 28px;
+  transition: all 0.4s ease;
 }
 
 .all-cards {

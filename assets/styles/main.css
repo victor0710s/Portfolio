@@ -81,4 +81,6 @@ body {
 .card {
   border: 1px solid rgba(70, 70, 70, 0.2549019608);
   width: 400px;
+  padding: 10px;
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */

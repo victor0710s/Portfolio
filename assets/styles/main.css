@@ -52,6 +52,7 @@ body {
 .bio .bio-img {
   width: 28%;
   border-radius: 50%;
+  margin-top: 50px;
   margin-left: 130px;
   border: 0.5px solid rgba(70, 70, 70, 0.2549019608);
 }
@@ -83,11 +84,11 @@ body {
 }
 
 .all-cards {
-  width: 50%;
+  width: 60%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 55px;
 }
 .all-cards p {
   font-size: 17px;
@@ -100,6 +101,75 @@ body {
   padding: 10px;
   border-radius: 4px;
   background-color: #e9e5e5;
+  min-height: 200px;
+}
+
+.hard-skills .card {
+  display: flex;
+  gap: 35px;
+}
+
+.skills-left {
+  list-style: none;
+  padding: 0;
+}
+.skills-left li {
+  margin-bottom: 10px;
+}
+.skills-left li::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.skills-left .python::before {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg");
+}
+.skills-left .html::before {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg");
+}
+.skills-left .css::before {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg");
+}
+.skills-left .scss::before {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg");
+}
+.skills-left .js::before {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg");
+}
+.skills-left .database::before {
+  background-image: url("../images/database-svgrepo-com.svg");
+}
+
+.skills-right {
+  list-style: none;
+  padding: 0;
+}
+.skills-right li {
+  margin-bottom: 10px;
+}
+.skills-right li::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.skills-right .git::before {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg");
+}
+.skills-right .linux::before {
+  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg");
+}
+.skills-right .en::before {
+  background-image: url("../images/usa-svgrepo-com.svg");
 }
 
 .education .education-info {
@@ -133,4 +203,42 @@ body {
 }
 .education p {
   margin: 0;
+}
+
+.soft-skills .skills {
+  list-style: none;
+  padding: 0;
+}
+.soft-skills li {
+  margin-bottom: 10px;
+}
+.soft-skills li::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.soft-skills .team::before {
+  background-image: url("../images/group-svgrepo-com.svg");
+}
+.soft-skills .org::before {
+  background-image: url("../images/list-success-svgrepo-com.svg");
+}
+.soft-skills .adap::before {
+  background-image: url("../images/octopus-svgrepo-com.svg");
+}
+.soft-skills .communication::before {
+  background-image: url("../images/communication-5-svgrepo-com.svg");
+}
+.soft-skills .learn::before {
+  background-image: url("../images/books-svgrepo-com.svg");
+}
+
+.cp {
+  position: fixed;
+  margin: auto 0;
 }/*# sourceMappingURL=main.css.map */

@@ -241,4 +241,39 @@ body {
 .cp {
   position: fixed;
   margin: auto 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    width: 95%;
+    padding: 15px;
+  }
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bio .bio-img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .bio .bio-text {
+    width: 90%;
+    margin-left: 0;
+    padding: 0;
+  }
+  .all-cards {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-content .name {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

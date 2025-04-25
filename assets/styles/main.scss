@@ -254,3 +254,45 @@ body {
     position: fixed;
     margin: auto 0;
 }
+
+@media (max-width: 768px) {
+    .content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .bio {
+        flex-direction: column;
+        align-items: center;
+        
+        .bio-img {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .bio-text {
+            width: 90%;
+            margin-left: 0;
+            padding: 0;
+        }
+    }
+
+    .all-cards {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+
+        .name {
+            text-align: center;
+        }
+    }
+}

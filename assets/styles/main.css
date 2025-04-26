@@ -365,6 +365,7 @@ footer .cp {
   .bio {
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
   }
   .bio .bio-img {
     width: 45%;

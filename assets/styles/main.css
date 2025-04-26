@@ -3,12 +3,14 @@ body {
   text-decoration: none;
   background-color: #f3f4f6;
   padding: 30px;
+  height: auto;
 }
 
 .content {
   width: 80%;
   height: auto;
   padding: 20px;
+  padding-bottom: 0;
   margin: auto;
   border-radius: 20px;
   background: rgb(0, 0, 0);
@@ -38,6 +40,9 @@ body {
 .header-content .name {
   font-size: 28px;
   font-weight: 600;
+}
+.header-content .profession {
+  color: #5d5d5d;
 }
 
 .bio {
@@ -106,7 +111,7 @@ body {
 
 .hard-skills .card {
   display: flex;
-  gap: 35px;
+  gap: 50px;
 }
 
 .skills-left {
@@ -238,9 +243,14 @@ body {
   background-image: url("../images/books-svgrepo-com.svg");
 }
 
-.cp {
-  position: fixed;
-  margin: auto 0;
+footer {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+footer .cp {
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -274,6 +284,14 @@ body {
     align-items: center;
   }
   .header-content .name {
+    text-align: center;
+  }
+}
+@media (max-width: 475px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */

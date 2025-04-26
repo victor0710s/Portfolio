@@ -395,7 +395,7 @@ footer .cp {
 @media (max-width: 768px) {
   .content {
     width: 95%;
-    padding: 15px;
+    padding: 5px;
   }
   .bio {
     flex-direction: column;

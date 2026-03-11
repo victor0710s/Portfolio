@@ -19,7 +19,7 @@
 
 <body>
   <div class="content">
-    <section>
+    <section class="apresentation snap-section">
       <div class="bio">
         <div class="info">
           <span>Devesenvolvedor Web - Minas Gerais, BR</span>
@@ -27,7 +27,7 @@
         <div class="bio-text">
           <div class="bio-columns">
             <div>
-              <h2>Victor <br>da Silva Santos</h2>
+              <h1>Victor <br>da Silva Santos</h1>
 
               <p class="biograph">
                 Cursando Engenharia de Software e focado em desenvolvimento. Busco constantemente evoluir por meio de
@@ -41,7 +41,7 @@
             <img src="../assets/images/perfil_img.jpg" class="bio-img"
               alt="Victor da Silva Santos, software developer, profile image.">
           </div>
-          <div class="contacts">
+          <!-- <div class="contacts">
             <h3>Vamos conversar...</h3>
             <a href="mailto:s.vih0710@gmail.com" title="Enviar email">
               <i class="fa-solid fa-envelope"></i>
@@ -63,98 +63,109 @@
               <i class="fa-brands fa-square-instagram"></i>
             </a>
 
-          </div>
+          </div> -->
           <a href="../assets/doc/VictorCv.pdf" download="">
-            <button class="cv-download">Baixar Currículo</button>
+            <button class="cv-download"><i class="fa-solid fa-download"></i>Baixar Currículo</button>
           </a>
         </div>
       </div>
     </section>
-    <div class="all-cards">
-      <section class="experience">
-        <h3>Experiências:</h3>
-        <div class="card">
-          <p>Iniciei minha carreira na área de tecnologia como Analista de Suporte Júnior, onde tive a oportunidade de
-            interagir com diferentes áreas como Desenvolvimento, QA, Banco de Dados, Ciência de Dados, Infraestrutura e
-            UX/UI.
-
-            Essa experiência me proporcionou uma visão ampla sobre como um produto é construído e evolui, além de
-            reforçar a importância de compreender bem as regras de negócio antes de implementar qualquer funcionalidade,
-            entendendo sempre seu propósito e impacto para o usuário.
-
-            Durante esse período, desenvolvi habilidades importantes como resolução de problemas, comunicação entre
-            equipes e pensamento orientado a produto, aprendendo na prática como as áreas de tecnologia trabalham de
-            forma integrada.</p>
-        </div>
-      </section>
-      <section class="education">
-        <h3>Formações e cursos:</h3>
-        <div class="card">
-          <div class="education-info">
-            <div class="bar"></div>
-            <div class="text-block">
-              <p class="course-name">Curso Técnico Integrado de Edificações</p>
-              <p class="institution">IFMG - Campus Ouro Preto</p>
-              <p class="period">2018 - 2022</p>
+    <section class="experience snap-section">
+      <h2>Experiências:</h2>
+      <div class="experience-info">
+        <div id="area">
+          <div id="area-line"></div>
+          <div class="area-header">
+            <h3>Analista de Suporte Júnior</h3>
+            <div>
+              <p>04/2024</p>
+              <div id="date-line"></div>
+              <p>05/2025</p>
             </div>
           </div>
-          <div class="education-info">
-            <div class="bar"></div>
-            <div class="text-block">
-              <p class="course-name">Engenharia de Software</p>
-              <p class="institution">Uninter</p>
-              <p class="period">2024 - Now</p>
+          <h4>Robbyson Systems</h4>
+        </div>
+        <div id="area">
+          <div id="area-line"></div>
+          <div class="area-header">
+            <h3>Músico</h3>
+            <div>
+              <p>02/2015</p>
+              <div id="date-line"></div>
+              <p>Atual</p>
             </div>
-          </div>
-          <div class="education-info">
-            <div class="bar"></div>
-            <div class="text-block">
-              <p class="course-name">Python do Básico ao Avançado - COD3r</p>
-              <p class="institution">Udemy</p>
-              <p class="period">2021 - 2022</p>
-            </div>
-          </div>
-          <div class="education-info">
-            <div class="bar"></div>
-            <div class="text-block">
-              <p class="course-name">FullStack Pro</p>
-              <p class="institution">Sujeito Programador</p>
-              <p class="period">2025 - Now</p>
-            </div>
+            <h4>Freelancer</h4>
           </div>
         </div>
-      </section>
-      <section class="hard-skills">
-        <h3>Habilidades Técnicas:</h3>
-        <div class="card">
-          <ul class="skills-left">
-            <li class="python">Python3</li>
-            <li class="html">HTML5</li>
-            <li class="css">CSS3</li>
-            <li class="scss">SCSS</li>
-            <li class="js">JavaScript</li>
-            <li class="database">NoSQL & SQL</li>
-          </ul>
-          <ul class="skills-right">
-            <li class="git">Git</li>
-            <li class="linux">Linux</li>
-            <li class="en">Inglês Básico</li>
-          </ul>
+      </div>
+    </section>
+    <section class="education snap-section">
+      <h3>Formações e cursos:</h3>
+      <div class="card">
+        <div class="education-info">
+          <div class="bar"></div>
+          <div class="text-block">
+            <p class="course-name">Curso Técnico Integrado de Edificações</p>
+            <p class="institution">IFMG - Campus Ouro Preto</p>
+            <p class="period">2018 - 2022</p>
+          </div>
         </div>
-      </section>
-      <section class="soft-skills">
-        <h3>Competências:</h3>
-        <div class="card">
-          <ul class="skills">
-            <li class="team">Trabalho em equipe</li>
-            <li class="org">Organização</li>
-            <li class="adap">Adaptabilidade</li>
-            <li class="communication">Comunicação clara</li>
-            <li class="learn">Vontade de aprender</li>
-          </ul>
+        <div class="education-info">
+          <div class="bar"></div>
+          <div class="text-block">
+            <p class="course-name">Engenharia de Software</p>
+            <p class="institution">Uninter</p>
+            <p class="period">2024 - Now</p>
+          </div>
         </div>
-      </section>
-    </div>
+        <div class="education-info">
+          <div class="bar"></div>
+          <div class="text-block">
+            <p class="course-name">Python do Básico ao Avançado - COD3r</p>
+            <p class="institution">Udemy</p>
+            <p class="period">2021 - 2022</p>
+          </div>
+        </div>
+        <div class="education-info">
+          <div class="bar"></div>
+          <div class="text-block">
+            <p class="course-name">FullStack Pro</p>
+            <p class="institution">Sujeito Programador</p>
+            <p class="period">2025 - Now</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hard-skills snap-section">
+      <h3>Habilidades Técnicas:</h3>
+      <div class="card">
+        <ul class="skills-left">
+          <li class="python">Python3</li>
+          <li class="html">HTML5</li>
+          <li class="css">CSS3</li>
+          <li class="scss">SCSS</li>
+          <li class="js">JavaScript</li>
+          <li class="database">NoSQL & SQL</li>
+        </ul>
+        <ul class="skills-right">
+          <li class="git">Git</li>
+          <li class="linux">Linux</li>
+          <li class="en">Inglês Básico</li>
+        </ul>
+      </div>
+    </section>
+    <section class="soft-skills snap-section">
+      <h3>Competências:</h3>
+      <div class="card">
+        <ul class="skills">
+          <li class="team">Trabalho em equipe</li>
+          <li class="org">Organização</li>
+          <li class="adap">Adaptabilidade</li>
+          <li class="communication">Comunicação clara</li>
+          <li class="learn">Vontade de aprender</li>
+        </ul>
+      </div>
+    </section>
     <footer>
       <div class="cp">
         <p>Powered by <a href="https://github.com/victor0710s" target="_blank"

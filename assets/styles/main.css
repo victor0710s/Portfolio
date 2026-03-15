@@ -13,6 +13,7 @@ html {
   font-size: 16px;
   font-family: var(--font-text);
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   overflow-y: scroll;
   height: 100vh;
 }
@@ -98,16 +99,6 @@ body {
   transition: all 0.4s ease;
 }
 
-.all-cards {
-  width: 60%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-.all-cards p {
-  font-size: 1rem;
-}
-
 .experience {
   display: flex;
   flex-direction: column;
@@ -122,12 +113,6 @@ body {
 }
 .experience .experience-info {
   width: 100%;
-}
-.experience #area-line {
-  width: 100%;
-  height: 1px;
-  margin: 0.75rem 0;
-  background-color: var(--border-color);
 }
 .experience #area h4 {
   margin: 0.4rem 0;
@@ -171,12 +156,6 @@ body {
 .education .education-info {
   width: 100%;
 }
-.education #course-line {
-  width: 100%;
-  height: 1px;
-  margin: 0.75rem 0;
-  background-color: var(--border-color);
-}
 .education #course {
   padding: 0.5rem 0;
 }
@@ -207,6 +186,13 @@ body {
   color: var(--lt-txt-color);
 }
 
+#division-line {
+  width: 100%;
+  height: 1px;
+  margin: 0.75rem 0;
+  background-color: var(--border-color);
+}
+
 #date-line {
   width: 1rem;
   height: 1px;
@@ -214,113 +200,57 @@ body {
   background-color: var(--border-color);
 }
 
-.hard-skills .card {
+.skills {
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
-.skills-left {
-  list-style: none;
-  padding: 0;
+.skills .skill-category {
+  margin: 1rem 0;
+  padding: 1rem 0;
 }
-.skills-left li {
-  margin-bottom: 10px;
+.skills h2 {
+  font-size: 1rem;
+  font-weight: 350;
+  text-transform: uppercase;
+  color: var(--lt-txt-color);
 }
-.skills-left li::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 8px;
-  vertical-align: middle;
-  background-size: contain;
-  background-repeat: no-repeat;
+.skills h3 {
+  font-size: 1.4rem;
+  font-family: var(--font-title);
+  text-transform: uppercase;
 }
-.skills-left .python::before {
-  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg");
+.skills .hard-skills div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  width: 80%;
 }
-.skills-left .html::before {
-  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg");
+.skills .hard-skills div span {
+  padding: 0.5rem;
+  border: 1px solid var(--bar-color);
 }
-.skills-left .css::before {
-  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg");
+.skills .hard-skills div :hover {
+  background-color: rgba(0, 0, 0, 0.877);
+  color: var(--bg-color);
 }
-.skills-left .scss::before {
-  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg");
+.skills .soft-skills div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  width: 80%;
 }
-.skills-left .js::before {
-  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg");
+.skills .soft-skills div span {
+  padding: 0.5rem;
+  border: 1px solid rgb(250, 129, 85);
+  color: rgb(250, 129, 85);
 }
-.skills-left .database::before {
-  background-image: url("../images/database-svgrepo-com.svg");
-}
-
-.skills-right {
-  list-style: none;
-  padding: 0;
-}
-.skills-right li {
-  margin-bottom: 10px;
-}
-.skills-right li::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 8px;
-  vertical-align: middle;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.skills-right .git::before {
-  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg");
-}
-.skills-right .linux::before {
-  background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg");
-}
-.skills-right .en::before {
-  background-image: url("../images/usa-svgrepo-com.svg");
-}
-
-.soft-skills .skills {
-  list-style: none;
-  padding: 0;
-}
-.soft-skills li {
-  margin-bottom: 10px;
-}
-.soft-skills li::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 8px;
-  vertical-align: middle;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.soft-skills .team::before {
-  background-image: url("../images/group-svgrepo-com.svg");
-}
-.soft-skills .org::before {
-  background-image: url("../images/list-success-svgrepo-com.svg");
-}
-.soft-skills .adap::before {
-  background-image: url("../images/octopus-svgrepo-com.svg");
-}
-.soft-skills .communication::before {
-  background-image: url("../images/communication-5-svgrepo-com.svg");
-}
-.soft-skills .learn::before {
-  background-image: url("../images/books-svgrepo-com.svg");
+.skills .soft-skills div :hover {
+  background-color: rgb(250, 129, 85);
+  color: var(--bg-color);
 }
 
 footer {
-  bottom: 0;
   width: 100%;
-  text-align: center;
-  margin-top: 40px;
-}
-footer .cp {
-  margin: 0 auto;
+  box-sizing: border-box;
 }/*# sourceMappingURL=main.css.map */

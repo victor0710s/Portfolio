@@ -1,10 +1,10 @@
 :root {
-  --border-color: #49424269;
-  --bar-color: #a3a3a3;
-  --bg-color: #f3f4f6;
-  --bg-card-color: #e9e5e5;
+  --border-color: #49494969;
+  --bg-color: #f3f3f3;
   --txt-color: #000;
-  --lt-txt-color: #5d5d5d;
+  --lt-txt-color: #747474;
+  --orange-txt-color: rgb(221, 131, 58);
+  --dark-bg-color: rgba(0, 0, 0, 0.877);
   --font-title: "Space Grotesk", sans-serif;
   --font-text: "Inter", sans-serif;
 }
@@ -70,33 +70,22 @@ body {
   border-radius: 50%;
   margin-top: 50px;
   margin-left: 130px;
-  border: 0.5px solid var(--border-color);
-}
-.bio .cv-download {
-  padding: 0.5rem 1.3rem;
-  margin-top: 15px;
-  color: var(--txt-color);
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.bio .cv-download i {
-  margin-right: 0.5rem;
 }
 .bio .biograph {
   max-width: 420px;
   margin-top: 20px;
   font-size: 1rem;
 }
-.bio .contacts a {
+
+.cv-download {
+  padding: 0.5rem 1.3rem;
+  margin-top: 15px;
   color: var(--txt-color);
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 5px;
-  transform: all 0.8s ease;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-.bio i:hover {
-  font-size: 1rem;
-  transition: all 0.4s ease;
+.cv-download i {
+  margin-right: 0.5rem;
 }
 
 .experience {
@@ -117,7 +106,7 @@ body {
 .experience #area h4 {
   margin: 0.4rem 0;
   font-weight: 500;
-  color: rgb(250, 129, 85);
+  color: var(--orange-txt-color);
 }
 .experience .area-header {
   display: flex;
@@ -228,10 +217,10 @@ body {
 }
 .skills .hard-skills div span {
   padding: 0.5rem;
-  border: 1px solid var(--bar-color);
+  border: 1px solid var(--border-color);
 }
 .skills .hard-skills div :hover {
-  background-color: rgba(0, 0, 0, 0.877);
+  background-color: var(--dark-bg-color);
   color: var(--bg-color);
 }
 .skills .soft-skills div {
@@ -242,15 +231,53 @@ body {
 }
 .skills .soft-skills div span {
   padding: 0.5rem;
-  border: 1px solid rgb(250, 129, 85);
-  color: rgb(250, 129, 85);
+  border: 1px solid var(--orange-txt-color);
+  color: var(--orange-txt-color);
 }
 .skills .soft-skills div :hover {
-  background-color: rgb(250, 129, 85);
+  background-color: var(--orange-txt-color);
   color: var(--bg-color);
 }
 
-footer {
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.footer .contact h3 {
+  color: var(--lt-txt-color);
+  font-weight: 350;
+  text-transform: uppercase;
+}
+.footer .contact h1 {
+  font-family: var(--font-title);
+  text-transform: uppercase;
+}
+.footer .socials {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+}
+.footer .socials a {
+  padding: 0.6rem 0;
+  font-size: 1.17rem;
+  font-weight: 350;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--txt-color);
+  transition: all 0.2s ease;
+}
+.footer .socials :hover {
+  color: var(--orange-txt-color);
+}
+.footer .cp {
   width: 100%;
-  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.footer .cp a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

@@ -80,12 +80,16 @@ body {
     max-width: 420px;
     margin-top: 20px;
     font-size: 1rem;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .cv-download {
   padding: 0.5rem 1.3rem;
-  margin-top: 15px;
+  margin: 0.9rem auto;
   color: var(--txt-color);
   text-transform: uppercase;
   cursor: pointer;
@@ -106,6 +110,7 @@ body {
     font-size: 1.15rem;
     text-transform: uppercase;
     font-weight: 350;
+    color: var(--lt-txt-color);
   }
 
   .experience-info {
@@ -158,6 +163,7 @@ body {
     font-size: 1.15rem;
     text-transform: uppercase;
     font-weight: 350;
+    color: var(--lt-txt-color);
   }
 
   .education-info {
@@ -537,11 +543,162 @@ body {
 //   }
 // }
 
-// @media (max-width: 475px) {
-//   .info {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     text-align: center;
-//   }
-// }
+@media (max-width: 700px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+
+  .info {
+    span {
+      font-size: 0.9rem;
+    }
+  }
+
+  .bio {
+    align-items: center;
+
+    .bio-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .bio-columns {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+
+      .bio-img {
+        max-width: 13rem;
+        margin: 1rem auto;
+      }
+    }
+
+    .biograph {
+      max-width: 520px;
+      font-size: 0.9rem;
+      text-align: center;
+
+      br {
+        display: block;
+      }
+    }
+  }
+
+  .cv-download {
+    color: var(--txt-color);
+
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .experience {
+    h2 {
+      font-size: 1rem;
+    }
+
+    #area {
+      h4 {
+        font-size: 0.8rem;
+      }
+    }
+
+    .area-header {
+      div {
+        p {
+          font-size: 0.7rem;
+        }
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+
+    li {
+      font-size: 0.9rem;
+    }
+
+  }
+
+  .education {
+    h2 {
+      font-size: 1rem;
+    }
+
+    #course {
+      padding: 0.5rem 0;
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+
+    .course-header {
+      h4 {
+        font-size: 0.8rem;
+      }
+
+      div {
+        p {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+
+  .skills {
+    h2 {
+      font-size: 1rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    .hard-skills {
+      div {
+        width: 85%;
+
+        span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .soft-skills {
+      div {
+        width: 85%;
+
+        span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .contact {
+      h3 {
+        font-size: 1rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    .socials {
+      margin: 2.5rem 0;
+
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+}
